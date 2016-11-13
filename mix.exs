@@ -14,7 +14,7 @@ defmodule Slackdice.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger]]
+    [applications: [:logger, :trot]]
   end
 
   # Dependencies can be Hex packages:
@@ -27,6 +27,9 @@ defmodule Slackdice.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    []
+    [
+      {:trot, github: "hexedpackets/trot"},
+      {:poison, "~> 1.4"}
+    ]
   end
 end
