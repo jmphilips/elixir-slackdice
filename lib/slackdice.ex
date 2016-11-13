@@ -1,0 +1,2 @@
+defmodule Slackdice do
+end
